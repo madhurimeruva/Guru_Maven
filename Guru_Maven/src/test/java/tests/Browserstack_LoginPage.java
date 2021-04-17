@@ -19,32 +19,13 @@ public class Browserstack_LoginPage {
 
 	private static Logger log = LogManager.getLogger(Browserstack_LoginPage.class.getName());
 
-	// private static Logger log =
-	// LogManager.getLogger(Browserstack_LoginPage.class);
-
-
 	@BeforeTest
 	public void invokeBrowser() {
 		System.setProperty("webdriver.chrome.driver", "C:\\chrome_driver1\\chromedriver.exe");
 
 	}
 
-	@DataProvider(name = "testData")
-	public Object[][] getData() {
 
-		Object[][] data = new Object[2][3];
-		// 1st row
-		data[0][0] = "TestUser";
-		data[0][1] = "TestUser@gmail.com";
-		data[0][2] = "TestUserPassword";
-		// 2nd row
-		data[1][0] = "madhu";
-		data[1][1] = "madhu.j10@gmail.com";
-		data[1][2] = "madhu1@test";
-
-		return data;
-
-	}
 
 	@Test(dataProvider = "testData")
 	public void login(String name, String email, String password) throws InterruptedException {
@@ -67,6 +48,23 @@ public class Browserstack_LoginPage {
 
 		log.info("browser is closed");
 		System.out.println(name + " " + email + " " + password);
+	}
+
+	@DataProvider(name = "testData")
+	public Object[][] getData() {
+
+		Object[][] data = new Object[2][3];
+		// 1st row
+		data[0][0] = "TestUser";
+		data[0][1] = "TestUser@gmail.com";
+		data[0][2] = "TestUserPassword";
+		// 2nd row
+		data[1][0] = "madhu";
+		data[1][1] = "madhu.j10@gmail.com";
+		data[1][2] = "madhu1@test";
+
+		return data;
+
 	}
 
 
