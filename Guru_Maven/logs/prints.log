@@ -1,0 +1,6 @@
+ 2021-04-08 13:35:56.916 [main] DEBUG tests.Browserstack_LoginPage - password was entered
+ 2021-04-08 13:35:59.367 [main] INFO  tests.Browserstack_LoginPage - browser is closed
+ 2021-04-08 13:36:04.927 [main] INFO  tests.Browserstack_LoginPage - Url is opened
+ 2021-04-08 13:36:05.107 [main] DEBUG tests.Browserstack_LoginPage - first name was entered
+ 2021-04-08 13:36:05.386 [main] DEBUG tests.Browserstack_LoginPage - password was entered
+ 2021-04-08 13:36:07.662 [main] INFO  tests.Browserstack_LoginPage - browser is closed
